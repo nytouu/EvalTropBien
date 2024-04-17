@@ -1,0 +1,31 @@
+@document.meta
+title: Eval Prog
+description: 
+authors: nytou
+categories: 
+created: 2024-04-17T15:26:57+0100
+updated: 2024-04-17T15:26:57+0100
+version: 1.1.1
+@end
+
+* Features
+  - Double Saut
+  - Mort
+
+  - UI : 
+  -- Score 
+  -- Bouton relancer quand on meurt
+
+  - Objets ramassables
+  -- Blueprint abstrait
+  -- Collectibles différents :
+  --- Valeur de score
+  --- Material
+
+* Difficultés
+  - J'ai un peu buté sur le reload de scène parce que j'utilsais le node "Set Input Mode UI Only"
+    Mais la valeur ne se reset pas avec la scène donc j'ai mis un peu de temps avant de trouver le problème
+    J'ai reglé ça en changeant l'input mode dans le start du Level
+
+  - J'ai aussi un peu galéré a trouver comment changer ma valeur de score, elle voulait pas s'update même en bindant
+    a une variable, au final j'ai bind a une fonction "GetText" et ça marche.
